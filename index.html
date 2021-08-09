@@ -4,7 +4,69 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- CSS only -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+			crossorigin="anonymous"
+		/>
 		<title>Document</title>
 	</head>
-	<body></body>
+	<body class="container-fluid">
+		<header>
+			<h1>Student Enrollment Form</h1>
+		</header>
+		<main>
+			<form action="">
+				<section>
+					<h5>Name</h5>
+					<input type="text" />
+				</section>
+
+				<section>
+					<h5>Email</h5>
+					<input type="email" />
+				</section>
+
+				<section>
+					<h5>Website</h5>
+					<input type="url" />
+				</section>
+
+				<section>
+					<h5>Image link</h5>
+					<input type="url" />
+				</section>
+
+				<section>
+					<h5>Gender</h5>
+					<div>
+						<input type="radio" name="male" />
+						<label for="male">Male</label>
+						<input type="radio" name="female" />
+						<label for="female">Female</label>
+					</div>
+				</section>
+
+				<section>
+					<h5>Skills</h5>
+					<div>
+						<input type="checkbox" name="java" />
+						<label for="java">Java</label>
+						<input type="checkbox" name="html" />
+						<label for="html">HTML</label>
+						<input type="checkbox" name="css" />
+						<label for="css">CSS</label>
+					</div>
+				</section>
+
+				<input type="submit" value="Enroll Student" />
+				<input type="submit" value="Clear" />
+			</form>
+		</main>
+		<footer>
+			<h6>Copyright 2020-2021 by Fresher Training</h6>
+		</footer>
+	</body>
 </html>
