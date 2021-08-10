@@ -11,62 +11,162 @@
 			integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="style.css" />
 		<title>Document</title>
 	</head>
-	<body class="container-fluid">
-		<header>
+	<body>
+		<header class="my-header">
 			<h1>Student Enrollment Form</h1>
 		</header>
-		<main>
-			<form action="">
-				<section>
-					<h5>Name</h5>
-					<input type="text" />
-				</section>
-
-				<section>
-					<h5>Email</h5>
-					<input type="email" />
-				</section>
-
-				<section>
-					<h5>Website</h5>
-					<input type="url" />
-				</section>
-
-				<section>
-					<h5>Image link</h5>
-					<input type="url" />
-				</section>
-
-				<section>
-					<h5>Gender</h5>
-					<div>
-						<input type="radio" name="male" />
-						<label for="male">Male</label>
-						<input type="radio" name="female" />
-						<label for="female">Female</label>
+		<main class="row my-main">
+			<div class="col-sm-6" id="form-div">
+				<form class="col left-form" id="form"">
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="name">Name </label>
+						</div>
+						<div class="col-8">
+							<input type="text" class="form-control" id="name" />
+						</div>
 					</div>
-				</section>
 
-				<section>
-					<h5>Skills</h5>
-					<div>
-						<input type="checkbox" name="java" />
-						<label for="java">Java</label>
-						<input type="checkbox" name="html" />
-						<label for="html">HTML</label>
-						<input type="checkbox" name="css" />
-						<label for="css">CSS</label>
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="email">Email </label>
+						</div>
+						<div class="col-8">
+							<input type="email" class="form-control" id="email" />
+						</div>
 					</div>
-				</section>
 
-				<input type="submit" value="Enroll Student" />
-				<input type="submit" value="Clear" />
-			</form>
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="website">Website </label>
+						</div>
+						<div class="col-8">
+							<input type="url" class="form-control" id="website" />
+						</div>
+					</div>
+
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="image">Image link</label>
+						</div>
+						<div class="col-8">
+							<input type="url" class="form-control" id="image" />
+						</div>
+					</div>
+
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="gender">Gender </label>
+						</div>
+						<div class="col-8">
+							<div class="radio" id="gender">
+								<label> <input type="radio" name="gender" value="male" /> Male</label>
+								<label> <input type="radio" name="gender" value="female" /> Female</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="row form-box">
+						<div class="col-4 form-left">
+							<label class="control-label" for="skills">Skills </label>
+						</div>
+						<div class="col-8">
+							<div class="checkbox" id="skills">
+								<label> <input type="checkbox" name="skills" value="java" /> Java</label>
+								<label> <input type="checkbox" name="skills" value="java" /> HTML</label>
+								<label> <input type="checkbox" name="skills" value="java" /> CSS</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="row form-box">
+						<div class="">
+							<button type="submit" class="btn btn-primary" onclick="myFunction()">
+								Enroll Student
+							</button>
+							<button type="reset" class="btn btn-danger">Clear</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="col-sm-6" id='db'>
+				<h3 class="text-center">Enrolled Students</h3>
+				<div id="card-div">
+					
+					
+					<div id="card-dis">
+						<h5>Description</h5>
+					</div>
+					<div id="card-img">
+						<h5>Image</h5>
+					</div>
+					
+				</div>
+				<!-- <form action="" class="bg-success">
+					<section>
+						<h5 class="">Name</h5>
+						<div class="form-right">
+							<input type="text" />
+						</div>
+					</section>
+
+					<section>
+						<h5>Email</h5>
+						<div class="form-right">
+							<input type="email" />
+						</div>
+					</section>
+
+					<section>
+						<h5>Website</h5>
+						<div class="form-right">
+							<input type="url" />
+						</div>
+					</section>
+
+					<section>
+						<h5>Image link</h5>
+						<div class="form-right">
+							<input type="url" />
+						</div>
+					</section>
+
+					<section>
+						<h5>Gender</h5>
+						<div class="form-right">
+							<input type="radio" name="male" />
+							<label for="male">Male</label>
+							<input type="radio" name="female" />
+							<label for="female">Female</label>
+						</div>
+					</section>
+
+					<section>
+						<h5>Skills</h5>
+						<div class="form-right">
+							<input type="checkbox" name="java" />
+							<label for="java">Java</label>
+							<input type="checkbox" name="html" />
+							<label for="html">HTML</label>
+							<input type="checkbox" name="css" />
+							<label for="css">CSS</label>
+						</div>
+					</section>
+
+					<input type="submit" value="Enroll Student" />
+					<input type="submit" value="Clear" />
+				</form> -->
+			</div>
 		</main>
-		<footer>
+		<footer class="my-footer">
 			<h6>Copyright 2020-2021 by Fresher Training</h6>
 		</footer>
+
+		<script src="script.js"></script>
+
 	</body>
 </html>
