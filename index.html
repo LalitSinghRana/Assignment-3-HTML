@@ -20,13 +20,14 @@
 		</header>
 		<main class="row my-main">
 			<div class="col-sm-6" id="form-div">
-				<form class="col left-form" id="form"">
+				<form class="col left-form" id="form" onsubmit="myFunction()">
+
 					<div class="row form-box">
 						<div class="col-4 form-left">
 							<label class="control-label" for="name">Name </label>
 						</div>
 						<div class="col-8">
-							<input type="text" class="form-control" id="name" />
+							<input type="text" class="form-control" id="name" required/>
 						</div>
 					</div>
 
@@ -35,7 +36,7 @@
 							<label class="control-label" for="email">Email </label>
 						</div>
 						<div class="col-8">
-							<input type="email" class="form-control" id="email" />
+							<input type="email" class="form-control" id="email" required/>
 						</div>
 					</div>
 
@@ -44,7 +45,7 @@
 							<label class="control-label" for="website">Website </label>
 						</div>
 						<div class="col-8">
-							<input type="url" class="form-control" id="website" />
+							<input type="url" class="form-control" id="website" required/>
 						</div>
 					</div>
 
@@ -53,7 +54,7 @@
 							<label class="control-label" for="image">Image link</label>
 						</div>
 						<div class="col-8">
-							<input type="url" class="form-control" id="image" />
+							<input type="url" class="form-control" id="image" required/>
 						</div>
 					</div>
 
@@ -63,8 +64,8 @@
 						</div>
 						<div class="col-8">
 							<div class="radio" id="gender">
-								<label> <input type="radio" name="gender" value="male" /> Male</label>
-								<label> <input type="radio" name="gender" value="female" /> Female</label>
+								<label> <input type="radio" name="gender" value="male" required/> Male</label>
+								<label> <input type="radio" name="gender" value="female" required/> Female</label>
 							</div>
 						</div>
 					</div>
@@ -75,16 +76,16 @@
 						</div>
 						<div class="col-8">
 							<div class="checkbox" id="skills">
-								<label> <input type="checkbox" name="skills" value="java" /> Java</label>
-								<label> <input type="checkbox" name="skills" value="java" /> HTML</label>
-								<label> <input type="checkbox" name="skills" value="java" /> CSS</label>
+								<label> <input type="checkbox" name="skills" value="Java" /> Java</label>
+								<label> <input type="checkbox" name="skills" value="HTML" /> HTML</label>
+								<label> <input type="checkbox" name="skills" value="CSS" /> CSS</label>
 							</div>
 						</div>
 					</div>
 
 					<div class="row form-box">
 						<div class="">
-							<button type="submit" class="btn btn-primary" onclick="myFunction()">
+							<button type="submit" class="btn btn-primary">
 								Enroll Student
 							</button>
 							<button type="reset" class="btn btn-danger">Clear</button>
@@ -93,7 +94,7 @@
 				</form>
 			</div>
 
-			<div class="col-sm-6" id='db'>
+			<div class="col-sm-6">
 				<h3 class="text-center">Enrolled Students</h3>
 				<div id="card-div">
 					
